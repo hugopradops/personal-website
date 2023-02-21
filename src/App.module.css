@@ -1,0 +1,13 @@
+.main {
+  padding: 2rem;
+  margin-top: 10rem;
+  height: 50px;
+  color: var(--white);
+  font-size: 4rem;
+
+  display: flex;
+  flex-direction: row;
+  /* text-align: right; */
+  justify-content: center;
+  align-items: center;
+}
