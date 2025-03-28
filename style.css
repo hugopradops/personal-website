@@ -12,6 +12,11 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light gray text */
+}
+
 /* Add a container class for consistent spacing */
 .container {
   max-width: 1200px; /* Set a maximum width for the container */
@@ -28,6 +33,30 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
+}
+
+header.dark-mode {
+  background-color: #1e1e1e; /* Dark background */
+  color: #ffffff; /* White text */
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Adjust shadow for dark mode */
+}
+
+header.dark-mode nav a {
+  color: #ffffff; /* White links */
+}
+
+header.dark-mode nav a:hover {
+  color: #198754; /* Green hover color */
+}
+
+header.dark-mode button {
+  background-color: #333333; /* Dark button background */
+  color: #ffffff; /* White button text */
+  border-color: #555555; /* Dark border */
+}
+
+header.dark-mode button:hover {
+  background-color: #444444; /* Slightly lighter on hover */
 }
 
 header nav {
@@ -60,10 +89,26 @@ nav a:hover {
   color: #198754;
 }
 
+nav a.dark-mode {
+  color: #ffffff;
+}
+
+nav a.dark-mode:hover {
+  color: #198754;
+}
+
 main {
   padding: 20px; /* Remove the top padding here */
   max-width: 100%; /* Ensure elements do not exceed the viewport width */
   box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+main.dark-mode h2 {
+  color: #ffffff; /* White section titles */
+}
+
+main.dark-mode p {
+  color: #cccccc; /* Light gray paragraphs */
 }
 
 footer {
@@ -78,6 +123,19 @@ footer {
   box-sizing: border-box; /* Include padding and border in width calculations */
 }
 
+footer.dark-mode {
+  background-color: #1e1e1e; /* Dark footer background */
+  color: #e0e0e0; /* Light gray footer text */
+}
+
+footer.dark-mode a {
+  color: #198754; /* Green links */
+}
+
+footer.dark-mode a:hover {
+  color: #1db954; /* Brighter green on hover */
+}
+
 footer a {
   color: #198754;
   text-decoration: none;
@@ -85,6 +143,10 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+footer a.dark-mode {
+  color: #198754;
 }
 
 .project-images {
