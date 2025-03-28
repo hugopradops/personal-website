@@ -163,6 +163,64 @@ footer a.dark-mode {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* About Section */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px; /* Add spacing from the header */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the content */
+  align-items: flex-start; /* Align items to the top */
+  gap: 40px; /* Add spacing between text and image */
+  max-width: 1200px; /* Limit the width of the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px; /* Limit the width of the text */
+  text-align: justify; /* Justify the text for better readability */
+  line-height: 1.6; /* Improve line spacing */
+}
+
+.about-image {
+  flex: 1;
+  max-width: 300px; /* Limit the width of the image */
+  text-align: center;
+}
+
+.profile-picture {
+  width: 100%;
+  max-width: 250px; /* Limit the size of the profile picture */
+  border-radius: 50%; /* Make the image circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Technical Skills Section */
+.technical-skills {
+  margin-top: 20px; /* Add spacing above the section */
+  text-align: center; /* Center the content */
+}
+
+.technical-skills h3 {
+  font-size: 1.5rem; /* Adjust font size for the heading */
+  margin-bottom: 10px; /* Add spacing below the heading */
+  color: #198754; /* Optional: Add a green color for emphasis */
+}
+
+.technical-skills a img {
+  display: inline-block; /* Ensure icons are inline */
+  margin: 0 auto; /* Center the icons */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   header {
     padding: 10px;
@@ -189,6 +247,15 @@ footer a.dark-mode {
   footer {
     padding: 10px; /* Adjust footer padding */
     font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    text-align: center;
+  }
+
+  .about-text, .about-image {
+    max-width: 100%; /* Allow full width on smaller screens */
   }
 }
 
