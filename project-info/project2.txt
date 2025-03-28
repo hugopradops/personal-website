@@ -1,0 +1,8 @@
+This project is a responsive template for a Brazilian food store built using React and Next.js. It showcases a modern and visually appealing design that works seamlessly on both desktop and mobile devices. The template includes the following features:
+
+Header Navigation: A fixed header with links to different sections of the page, ensuring easy navigation.
+Welcome Section: A hero section with a background image, welcoming users and providing quick access to explore products or learn more about the store.
+Products Section: A dynamic menu displaying Brazilian food items with images, descriptions, and prices. Each product image can be enlarged using a modal for better visibility.
+About Us Section: A section highlighting the store's mission and dedication to bringing authentic Brazilian flavors to Canada, complemented by high-quality images.
+Footer: A footer with social media links, copyright information, and the store's address.
+The template uses Tailwind CSS for styling, ensuring a clean and responsive layout. It also incorporates Next.js Image Optimization for efficient image loading. This project is ideal for showcasing your skills in building user-friendly and responsive web applications.

@@ -1,25 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Prado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="bg-white text-black p-6 fixed top-0 left-0 w-full z-50 shadow-md">
+        <nav class="container flex flex-wrap justify-between items-center">
+            <h1 class="text-2xl font-bold">Hugo Prado</h1>
+            <ul class="flex flex-wrap gap-4 mt-4 md:mt-0">
+                <li>
+                    <a href="#about" class="hover:underline hover:text-green-600">About Me</a>
+                </li>
+                <li>
+                    <a href="#projects" class="hover:underline hover:text-green-600">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="hover:underline hover:text-green-600">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal portfolio! I am Hugo Prado Serafim Pereira, a dedicated Computer Science student at the University of Guelph with hands-on experience in software development, coding, and troubleshooting. I am passionate about creating impactful software solutions and have a strong foundation in problem-solving and algorithm design.</p>
+            <p>My technical skills include programming in C, Java, JavaScript, Python, HTML, and CSS. I have experience with frameworks like React and Next.js, and I am proficient in tools such as Docker, Git, and Gradle. I am also skilled in database management using SQLite and SQL.</p>
+        </section>
 
-    <link rel="icon" type="image/svg+xml" href="/coffee.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Brazilian Flavors</h3>
+                    <p>This project is a responsive template for a Brazilian food store built using React and Next.js. It showcases a modern and visually appealing design that works seamlessly on both desktop and mobile devices.</p>
+                    <ul>
+                        <li>Header Navigation: A fixed header with links to different sections of the page, ensuring easy navigation.</li>
+                        <li>Welcome Section: A hero section with a background image, welcoming users and providing quick access to explore products or learn more about the store.</li>
+                        <li>Products Section: A dynamic menu displaying Brazilian food items with images, descriptions, and prices. Each product image can be enlarged using a modal for better visibility.</li>
+                        <li>About Us Section: A section highlighting the store's mission and dedication to bringing authentic Brazilian flavors to Canada, complemented by high-quality images.</li>
+                        <li>Footer: A footer with social media links, copyright information, and the store's address.</li>
+                    </ul>
+                    <p>The template uses Tailwind CSS for styling, ensuring a clean and responsive layout. It also incorporates Next.js Image Optimization for efficient image loading. This project is ideal for showcasing your skills in building user-friendly and responsive web applications.</p>
+                    <div class="project-images">
+                        <img src="images/project2-1.png" alt="Brazilian Flavors - About Us" style="width: 100%; max-width: 600px;">
+                        <img src="images/project2-2.png" alt="Brazilian Flavors - Mobile View" style="width: 100%; max-width: 600px;">
+                    </div>
+                </li>
+                <li>
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </li>
+                <li>
+                    <h3>Project 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </li>
+                <li>
+                    <h3>Project 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </li>
+                <li>
+                    <h3>Project 5</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </li>
+            </ul>
+        </section>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media!</p>
+            <ul>
+                <li>Email: <a href="mailto:hugo.pradops@gmail.com">hugo.pradops@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/hugopradops" target="_blank" rel="noopener noreferrer">linkedin.com/in/hugopradops</a></li>
+                <li>GitHub: <a href="https://github.com/hugopradops" target="_blank" rel="noopener noreferrer">github.com/hugopradops</a></li>
+                <li>Phone: <a href="tel:+12048806453">+1 (204) 880-6453</a></li>
+            </ul>
+        </section>
+    </main>
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <footer>
+        <p>&copy; 2025 Hugo Prado. All rights reserved.</p>
+        <p>Follow me on 
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a> and 
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>.
+        </p>
+    </footer>
 
-    <title>Hugo Prado Dev</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
