@@ -232,26 +232,27 @@ footer a.dark-mode {
   padding: 20px; /* Add padding for better spacing */
 }
 
-/* Align the title and content to the left */
+/* Center "Hello there 👋!" */
 .about-title {
-    text-align: left;
+    text-align: center; /* Center the title */
     font-size: 2rem;
     margin-bottom: 20px;
-    font-weight: bold; /* Make it bold */
-    color: #000; /* Set the color to black */
+    font-weight: bold;
+    color: #000;
 }
 
+/* Adjust "about-content" for responsiveness */
 .about-content {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
-    gap: 20px; /* Add spacing between the text and image */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: flex-start; /* Align content to the left */
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: center; /* Center items */
+    gap: 20px;
+    text-align: center; /* Center text */
 }
 
 .about-text {
-    flex: 2; /* Allow the text to take more space */
-    text-align: left; /* Align text to the left */
+    max-width: 800px; /* Limit the width for better readability */
+    text-align: center; /* Center text */
 }
 
 .about-image {
@@ -283,15 +284,15 @@ footer a.dark-mode {
 
 /* Technical Skills Section */
 .technical-skills {
-  margin-top: 20px; /* Add spacing above the section */
-  text-align: center; /* Center the content */
+  margin-top: 20px;
+  text-align: center; /* Center the section */
 }
 
 .technical-skills h3 {
-  font-size: 1.5rem; /* Adjust font size for the heading */
-  margin-bottom: 10px; /* Add spacing below the heading */
-  font-weight: bold; /* Make it bold */
-  color: #000; /* Set the color to black */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000;
 }
 
 .technical-skills a img {
@@ -300,10 +301,8 @@ footer a.dark-mode {
 }
 
 .technical-skills img {
-    width: 80%; /* Reduce the size of the icons */
-    max-width: 150px; /* Set a maximum width */
-    margin: 10px auto; /* Center the icons within their container */
-    display: block; /* Ensure proper alignment */
+    max-width: 150px; /* Increase the size of the icons */
+    margin: 10px; /* Maintain spacing between icons */
 }
 
 #back-to-top {
@@ -379,6 +378,18 @@ footer a.dark-mode {
 
   .project-images img {
     width: calc(50% - 10px); /* Use half the width for smaller screens */
+  }
+
+  .about-title {
+    font-size: 1.8rem; /* Adjust font size */
+  }
+
+  .technical-skills h3 {
+    font-size: 1.3rem; /* Adjust font size */
+  }
+
+  .technical-skills img {
+    max-width: 80px; /* Reduce icon size */
   }
 }
 

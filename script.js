@@ -21,12 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Add extra padding to sections to prevent overlap
-    const sections = document.querySelectorAll("main section");
-    sections.forEach(section => {
-        section.style.scrollMarginTop = `${headerHeight}px`;
-    });
-
     const themeToggle = document.getElementById("theme-toggle");
     const body = document.body;
 
