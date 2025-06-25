@@ -26,7 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     themeToggle.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
-        header.classList.toggle("dark-mode"); // Apply dark mode to header
-        themeToggle.textContent = body.classList.contains("dark-mode") ? "🌙" : "🌞"; // Toggle emoji
+        header.classList.toggle("dark-mode");
+        // Set icon based on new mode
+        if (body.classList.contains("dark-mode")) {
+            themeToggle.textContent = "🌞"; // Show sun in dark mode (to switch to light)
+        } else {
+            themeToggle.textContent = "🌙"; // Show moon in light mode (to switch to dark)
+        }
     });
 });
