@@ -24,6 +24,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const themeToggle = document.getElementById("theme-toggle");
     const body = document.body;
 
+    // Set initial icon based on current mode
+    if (body.classList.contains("dark-mode")) {
+        themeToggle.textContent = "🌞";
+    } else {
+        themeToggle.textContent = "🌙";
+    }
+
     themeToggle.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
         header.classList.toggle("dark-mode");
